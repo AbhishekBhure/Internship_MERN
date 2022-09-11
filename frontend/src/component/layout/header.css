@@ -1,0 +1,45 @@
+.navbar-light .navbar-brand {
+  color: rgb(245 236 236 / 90%);
+}
+.btn-outline-success {
+  color: #fafffc;
+  border-color: #ffffff;
+}
+.color-a {
+  color: black;
+  background-color: rgb(248 146 65);
+}
+.main {
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  margin: 88px 430px;
+}
+
+.logos {
+  display: flex;
+  height: 100px;
+  width: 100%;
+}
+.logos > img {
+  height: 50px;
+  width: 90px;
+  margin: 0px 20px;
+}
+
+.btn-d {
+  color: black;
+  background-color: rgb(248 146 65);
+  padding: 10px 150px;
+  border-color: rgb(248 146 65);
+}
+.button {
+  margin: 0px 70px;
+}
+
+.btn:hover {
+  color: black;
+  background-color: rgb(248 146 65);
+}
