@@ -41,3 +41,15 @@ login using provided email & password from the Screenshot
 
 After login it will redirect you to course page where you will get the data like "title" & "Duration" in screenshot that was fetched from Database
 ![App Screenshot](https://github.com/pranavchivate/Intership/blob/master/frontend/src/screenshots/data%20fetched%20from%20backend.png)
+
+## Collections
+
+![App Screenshot](https://github.com/AbhishekBhure/Internship_MERN/blob/master/frontend/src/screenshots/collections.png)
+
+## Courses
+
+![App Screenshot](https://github.com/AbhishekBhure/Internship_MERN/blob/master/frontend/src/screenshots/courses.png)
+
+## Users
+
+![App Screenshot](https://github.com/AbhishekBhure/Internship_MERN/blob/master/frontend/src/screenshots/user.png)
