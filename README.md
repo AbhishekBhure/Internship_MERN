@@ -39,5 +39,5 @@ login using provided email & password from the Screenshot
 
 ## Course data
 
-After login it will redirect you to course page where you will get the data like "title" & "Duration" in screenshot that was fetched from Backend
+After login it will redirect you to course page where you will get the data like "title" & "Duration" in screenshot that was fetched from Database
 ![App Screenshot](https://github.com/pranavchivate/Intership/blob/master/frontend/src/screenshots/data%20fetched%20from%20backend.png)
