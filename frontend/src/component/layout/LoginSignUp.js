@@ -1,6 +1,6 @@
 import React, { Fragment, useRef, useState, useEffect } from "react";
 import "./LoginSignUp.css";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import {
   clearErrors,
@@ -9,8 +9,6 @@ import {
   googleLogin,
 } from "../../actions/userAction";
 import GoogleLogin from "react-google-login";
-// import { response } from "express";
-// import { Alert, useAlert } from 'react-alert'
 
 const LoginSignUp = () => {
   const dispatch = useDispatch();
@@ -62,11 +60,6 @@ const LoginSignUp = () => {
   const registerDataChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
   };
-
-  // const location = useLocation();
-  // const redirect = location.search
-  //     ? "/" + location.search.split("=")[1]
-  //     : "/account";
 
   useEffect(() => {
     if (error) {
