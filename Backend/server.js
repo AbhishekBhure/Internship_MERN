@@ -19,7 +19,7 @@ connectDatabase();
 
 // connectPassport();
 
-const server = app.listen(process.env.PORT, () => {
+const server = app.listen(port, () => {
   console.log(`server is working on http://localhost:${port}`);
 });
 
