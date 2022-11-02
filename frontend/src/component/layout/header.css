@@ -32,7 +32,8 @@
 .btn-d {
   color: black;
   background-color: rgb(248 146 65);
-  padding: 10px 150px;
+  /* padding: 10px 150px; */
+  width: 100px;
   border-color: rgb(248 146 65);
 }
 .button {
@@ -42,4 +43,14 @@
 .btn:hover {
   color: black;
   background-color: rgb(248 146 65);
+}
+
+button > a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+button > a:hover{
+  color: #000000;
+  transition: color .3s ease-in-out;
 }

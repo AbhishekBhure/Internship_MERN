@@ -2,12 +2,7 @@ import React, { Fragment, useRef, useState, useEffect } from "react";
 import "./LoginSignUp.css";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import {
-  clearErrors,
-  login,
-  register,
-  googleLogin,
-} from "../../actions/userAction";
+import { clearErrors, login, register } from "../../actions/userAction";
 import GoogleLogin from "react-google-login";
 
 const LoginSignUp = () => {
@@ -32,7 +27,7 @@ const LoginSignUp = () => {
 
   const googleLoginSubmit = (e) => {
     e.preventDefault();
-    dispatch(googleLogin(loginEmail, loginPassword));
+    window.open("api/v1/googlelogin", "_self");
   };
 
   const loginSubmit = (e) => {
@@ -127,7 +122,7 @@ const LoginSignUp = () => {
             <GoogleLogin
               clientId="150151659242-04r38fqs4it9ruj3amaju02tr0ufhsq7.apps.googleusercontent.com"
               buttonText="Login"
-              onSuccess={googleLoginSubmit}
+              onClick={googleLoginSubmit}
               // onFailure={responseGoogleError}
               cookiePolicy={"single_host_origin"}
             />
