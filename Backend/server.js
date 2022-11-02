@@ -3,7 +3,7 @@ const connectDatabase = require("./config/database");
 // const { connectPassport } = require("./utils/Provider");
 
 const dotenv = require("dotenv");
-
+const port = process.env.PORT || 8000;
 //Handling uncaught exception
 process.on("uncaughtException", (err) => {
   console.log(`Error: ${err.message}`);
@@ -20,7 +20,7 @@ connectDatabase();
 // connectPassport();
 
 const server = app.listen(process.env.PORT, () => {
-  console.log(`server is working on http://localhost:${process.env.PORT}`);
+  console.log(`server is working on http://localhost:${port}`);
 });
 
 //unhandled promise rejection
