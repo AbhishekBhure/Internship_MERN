@@ -2,10 +2,10 @@ const express = require("express");
 const app = express();
 const cookieParser = require("cookie-parser");
 const errorMiddleware = require("./middleware/error");
-const { connectPassport } = require("./utils/Provider");
+// const { connectPassport } = require("./utils/Provider");
 const session = require("express-session");
 const dotenv = require("dotenv");
-const passport = require("passport");
+// const passport = require("passport");
 
 app.use(express.json());
 
@@ -15,20 +15,20 @@ dotenv.config({
 });
 
 // Middleware for error
-app.use(
-  session({
-    secret: process.env.SESSION_SECRET,
-    resave: false,
-    saveUninitialized: false,
-  })
-);
+// app.use(
+//   session({
+//     secret: process.env.SESSION_SECRET,
+//     resave: false,
+//     saveUninitialized: false,
+//   })
+// );
 app.use(cookieParser());
 
-app.use(passport.authenticate("session"));
-app.use(passport.initialize());
-app.use(passport.session());
+// app.use(passport.authenticate("session"));
+// app.use(passport.initialize());
+// app.use(passport.session());
 
-connectPassport();
+// connectPassport();
 
 //Route imports
 const courses = require("./routes/courseRoute");

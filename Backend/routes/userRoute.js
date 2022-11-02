@@ -22,17 +22,17 @@ router.get(
   })
 );
 
-router.get(
-  "/login",
-  //   passport.authenticate("google"),
-  //   (req, res, next) => {
-  //     res.send("logged in");
-  //   }
-  passport.authenticate("google", {
-    scope: ["profile"],
-    successRedirect: process.env.FRONTEND_URL,
-  })
-);
+// router.get(
+// "/login",
+//   passport.authenticate("google"),
+//   (req, res, next) => {
+//     res.send("logged in");
+//   }
+//   passport.authenticate("google", {
+//     scope: ["profile"],
+//     successRedirect: process.env.FRONTEND_URL,
+//   })
+// );
 
 router.route("/logout").get(logout);
 
